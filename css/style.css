@@ -51,36 +51,40 @@ header .upgrade button:hover {
     display: table;
     clear: both;
 }
-/* nav */
-
-.nav-user-bot {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: white;
-}
-
 
 .overflow {
     overflow: auto;
 }
+/* nav */
+
 
 nav {
    color: white;
-    position: sticky;
-    top: 0;
-    left: 0;
-    float: left;
+   position: fixed;
+   top: 0;
+   left: 0;
+   float: left;
    z-index: 2;
    background-color: black;
    width: 200px;
    height: calc(100vh - 48px);
-    padding: 15px;
+   padding: 15px;
+}
+
+.nav-user-bot {
+    color: rgb(112, 89, 89);
+    align-self: flex-end;
+}
+
+.nav-cont-flex {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
 .logo-spotify {
     width: 80%;
-    margin-bottom: 30px;
 }
 
 nav ul li a svg {
@@ -107,6 +111,12 @@ nav a {
     padding-bottom: 10px;
     border-bottom: 1px solid white;
 }
+
+.playlist {
+    height: 35vh;
+    width: 100%;
+}
+
 /* hover */
 
 nav ul li:hover a{
@@ -117,7 +127,7 @@ nav ul li:hover svg {
     filter: invert(1) brightness(100);
 } 
 
-.nav-user-bot:hover .download-app {
+ .download-app:hover .install {
     color: white;
     cursor: pointer;
 }
@@ -134,7 +144,7 @@ ul {
 /* main */
 
 .cont-main {
-    float: left;
+    float: right;
     width: calc(100% - 200px);
     margin-top: 5em;
     background-color: blue;
@@ -162,6 +172,7 @@ ul {
     height: 100%;
 }
 
+
 /* font-size  */
 
 .font-s-40 {
@@ -169,7 +180,10 @@ ul {
     vertical-align: middle;
 }
 
-
+/* colori */
+.c-white {
+    color: white;
+}
 
 
 /* footer */
