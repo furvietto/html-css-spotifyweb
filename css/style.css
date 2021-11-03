@@ -46,28 +46,100 @@ header .upgrade button:hover {
     padding: 12px 22px;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* nav */
 
-.container-main-nav {
-    display:flex;
-    flex-direction: row;
+
+
+.h {
+    height: 280px;
+}
+
+.overflow {
+    overflow: auto;
 }
 
 nav {
-   ;
-   z-index: 999;
-   background-color: cornsilk;
-   width: 20%;
+   color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    float: left;
+   z-index: 2;
+   background-color: black;
+   width: 200px;
+   height: 100vh;
+    padding: 15px 15px 88px 15px;
+}
+
+.logo-spotify {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+nav ul li a svg {
+    width: 15%;
+    vertical-align: text-bottom;
+}
+
+nav a {
+    color: #AEB6BF ;
+    text-decoration: none;
+}
+
+/* hover */
+
+nav ul li:hover a{
+    color: white;
+}
+
+nav ul li:hover svg {
+    filter: invert(1) brightness(100);
+} 
+
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    line-height: 35px;
 }
 
 /* main */
 
-main {
-    width: 80%;
+.cont-main {
+    float: left;
+    width: calc(100% - 200px);
     margin-top: 5em;
     background-color: blue;
 }
 
-/* width */
+/* margin */
 
+.mar-bot-20 {
+    margin-bottom: 20px;
+}
 
+/* font-size  */
+
+.font-s-40 {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    height: 3em;
+    background-color: grey;
+    width: 100%;
+}
