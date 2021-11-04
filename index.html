@@ -5,105 +5,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Spotify</title>
-    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
+    <div class="container">
+        <main class="clearfix">
+            <nav class="main-nav">
+                <div class="main-nav-top">
+                    <ul>
+                        <li><img class="mar-bot-20 logo-spotify" src="img/logo.svg" alt="logo spotify"></li>
+                        <li><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                                        fill="#AEB6BF " />
+                                </svg> Home</a> </li>
+                        <li><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                        fill="#AEB6BF" fill-rule="evenodd" />
+                                </svg> Cerca</a></li>
+                        <li class="mar-bot-20"><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                                        fill="#AEB6BF" />
+                                </svg>Libreria</a></li>
+                        <li>
+                            <a href="">
+                                <h4>PLAYLIST</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="font-s-40 fas fa-plus-square"></i> Crea playlist</a>
+                        </li>
+                    </ul>
 
-    <!-- header -->
-    <header>
-        <div class="upgrade">
-            <button>
-                EFFETTUA L'UPGRADE
-            </button>
-        </div>
-    </header>
-    <!-- /header -->
+                    <ul class="overflow playlist">
+                        <li><a href="">Nome Playlist</a> </li>
+                        <li><a href="">Nome Playlist</a> </li>
+                        <li><a href="">Nome Playlist</a> </li>
+                        <li><a href="">Nome Playlist</a> </li>
+                        <li><a href="">Nome Playlist</a> </li>
+                        <li><a href="">Nome Playlist</a> </li>
+                        <li><a href="">Nome Playlist</a> </li>
+                    </ul>
+                </div>
+                <div class="main-nav-bottom">
 
-    <!-- main -->
 
-    <nav>
-        <div class="nav-cont-flex">
-            
-            <ul>
-                <li><img class="mar-bot-20 logo-spotify" src="img/logo.svg" alt="logo spotify"></li>
-                <li><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <div class="download-app">
+                        <div class="install">
+                            <i class="far fa-arrow-alt-circle-down"></i> Installa app
+                        </div>
+                    </div>
+
+                    <div class="mar-top-10 c-white">
+                        <svg class="user-nav" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+                            <title>User Icon</title>
                             <path
-                                d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                                fill="#AEB6BF " />
-                        </svg> Home</a> </li>
-                <li><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                                fill="#AEB6BF" fill-rule="evenodd" />
-                        </svg> Cerca</a></li>
-                <li class="mar-bot-20"><a href=""><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
-                                fill="#AEB6BF" />
-                        </svg>Libreria</a></li>
-                <li>
-                    <a href="">
-                        <h4>PLAYLIST</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href=""><i class="font-s-40 fas fa-plus-square"></i> Crea playlist</a>
-                </li>
-            </ul>
+                                d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                                fill="#ffffff" fill-rule="evenodd" />
+                        </svg> John Doe
 
-            <ul class="overflow playlist">
-                <li><a href="">Nome Playlist</a> </li>
-                <li><a href="">Nome Playlist</a> </li>
-                <li><a href="">Nome Playlist</a> </li>
-                <li><a href="">Nome Playlist</a> </li>
-                <li><a href="">Nome Playlist</a> </li>
-                <li><a href="">Nome Playlist</a> </li>
-                <li><a href="">Nome Playlist</a> </li>
-            </ul>
-
-            <div class="nav-user-bot">
-                <div class="download-app">
-                    <div class="install">
-                        <i class="far fa-arrow-alt-circle-down"></i> Installa app
                     </div>
                 </div>
-
-                <div class="mar-top-10 c-white">
-                    <svg class="user-nav" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
-                        <title>User Icon</title>
-                        <path
-                            d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
-                            fill="#ffffff" fill-rule="evenodd" />
-                    </svg> John Doe
-
+            </nav>
+            <section class="main-content">
+                <div class="header-main">
+                    <div class="upgrade">
+                        <button>
+                            EFFETTUA L'UPGRADE
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <main class="clearfix">
-        <div class="cont-main">
-            lorem
-        </div>
-    </main>
-    <!-- /main -->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi reprehenderit magnam deleniti
+                officiis
+                libero voluptates nulla cupiditate recusandae aliquam voluptas rem in, sunt temporibus a aliquid fuga
+                deserunt.
+                Cupiditate.
+                At omnis quod quaerat, corporis ratione placeat nostrum repellat possimus architecto ipsa est saepe
+                officiis
+                officia obcaecati alias, iusto vitae? Hic dolorum ex quo quis rerum, aperiam nesciunt totam minima!
+                Nobis nulla repellat fugit eligendi corporis quam asperiores deleniti ab tempore harum, fugiat enim
+                tenetur
+                aspernatur facere quae similique accusantium soluta ea voluptas nisi at vitae laboriosam deserunt iure.
+                Consequatur.
+                Iste pariatur eum ipsa aspernatur error voluptatum quia, dolor enim accusamus aliquam impedit,
+                architecto iusto
+                nam est veniam, neque officia? Sequi consectetur unde est possimus soluta iusto numquam mollitia fugiat.
+                Vel dolorem officiis optio, doloribus, dolor minus ratione debitis saepe nam culpa aperiam voluptatum
+                quibusdam
+                doloremque non voluptatibus repudiandae suscipit. Iure numquam dignissimos excepturi eaque laborum
+                necessitatibus tenetur, quas architecto.
+                Exercitationem doloremque quos ad eos asperiores consequatur rem quo inventore dolores culpa quasi
+                reiciendis
+                sapiente odio aut neque doloribus ab voluptates voluptatum minus similique iste, impedit consequuntur
+                quia
+                animi! Illum.
+                Praesentium fugit nam in quae sapiente corporis soluta quos ea, ut modi quas a itaque neque pariatur
+                error iste
+                architecto cumque fugiat distinctio earum enim, vitae adipisci eaque. Doloremque, aliquam.
+                Tempore porro hic autem sequi placeat? Pariatur maxime, ducimus odio sunt ipsum deleniti amet non
+                impedit
+                inventore saepe esse eligendi laboriosam provident. Temporibus eligendi, nam laborum quo provident
+                placeat
+                dolore?
+                Minima reiciendis error quod obcaecati quibusdam ipsa in nemo! Eius dolores suscipit veniam harum soluta
+                architecto facilis et aliquam nam provident repellendus eligendi necessitatibus voluptatum, beatae
+                maxime aut
+                voluptatibus totam!
+                Quas quaerat fuga ratione obcaecati earum voluptatem libero, culpa ab ut ducimus? Sit quisquam veniam
+                distinctio. Dolores cupiditate quasi excepturi, consectetur porro deleniti dignissimos labore, iure
+                minus
+                doloremque veritatis placeat.
+                Placeat harum sit omnis quisquam! Fugiat eos optio ad. Vero blanditiis illum adipisci nobis, temporibus
+                sit
+                consequatur amet id dignissimos. Soluta, sequi unde voluptatem praesentium repellendus inventore cum
+                amet at!
+                Officia earum odio quidem labore a architecto consequatur exercitationem tempore. Corrupti officia
+                impedit
+                consequuntur velit. Quasi, aperiam, vitae autem tempora eligendi ratione optio incidunt minus enim
+                deserunt
+                facilis deleniti doloremque!
+                Accusantium dolorum ullam quia officiis velit inventore magnam vitae ex facere animi, eaque, sed tempora
+                quibusdam, aspernatur earum adipisci eos harum. Pariatur consequatur natus vero minus quisquam
+                voluptatem unde
+                dolor.
+                Aliquid sit, excepturi quia repellendus rerum saepe omnis ducimus culpa eveniet doloribus expedita qui
+                sed iste
+                accusantium ad cum consectetur commodi inventore cupiditate beatae dolorem atque? Veniam in deserunt
+                veritatis?
+                Tenetur soluta accusantium vel veniam, quod odit officiis fuga delectus? Enim, at quibusdam. Quam,
+                voluptas
+                necessitatibus ex dolore fugiat magni suscipit, tempora maiores corporis hic voluptatum ea debitis,
+                saepe cum?
+                Consectetur, ad veniam! Eius laboriosam odit fugit minima quod aliquam at blanditiis eveniet ratione,
+                saepe
+                reprehenderit. Ducimus distinctio laboriosam perferendis doloremque deserunt! Reprehenderit sequi
+                dignissimos
+                pariatur quisquam ea neque modi!
+                Id sunt esse iste. Quos dolores ab neque alias ipsum, cum adipisci laudantium perspiciatis dolore
+                cupiditate
+                saepe molestias libero expedita rem commodi ex et veritatis, qui aliquam iure enim quae?
+                Consectetur nihil est corrupti iure earum explicabo quidem iusto repellat quam architecto unde et
+                voluptatum
+                exercitationem alias modi, nam sit provident similique, magnam, accusamus voluptate maxime quasi harum.
+                Officia,
+                aperiam?
+                Numquam magnam fuga natus odio minima in neque voluptas earum expedita, mollitia beatae ullam ex alias
+                dolor
+                dignissimos facere officiis sapiente, dicta quidem, maiores laudantium. Impedit porro ipsa numquam
+                voluptatum.
+                Facere fuga corporis quisquam perspiciatis vero deleniti alias sunt consequatur assumenda id illum
+                explicabo ut
+                ullam quos at veniam quo, minima omnis. Totam, quia tempore! Velit, aperiam delectus? Praesentium,
+                magnam.
+            </section>
+        </main>
+        <footer></footer>
     </div>
-    <!-- /container -->
-    <footer>
-
-
-    </footer>
 </body>
 
 </html>

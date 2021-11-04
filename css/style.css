@@ -1,38 +1,131 @@
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
+  }
+  
+  html {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-}
+    color: var(--font-color);
+  }
+  
+  .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    overflow: hidden;
+  }
 
-/* header */
+  /* nav */
+  
+  .main-nav {
+      float: left;
+      width: 230px;
+      height: 100%;
+      min-height: 520px;
+      background-color: black;
+      padding: 15px;
+      font-size: 0.8em;
+    }
+    .main-nav-top {
+        width: 100%;
+        height: calc(100% - 80px);
+    }
+    .main-nav-bottom {
+        width: 100%;
+        height: 80px;
+        color: rgb(112, 89, 89)
+    }
+    
+    .main-nav-top ul li a svg{
+        width: 12%;
+        vertical-align: top;
+    }
+    
+    .main-nav-top a {
+        color: #AEB6BF ;
+        text-decoration: none;
+    }
+    
+    .user-nav {
+        margin-right: 10px;
+        width: 12%;
+        border-radius: 50%;
+        vertical-align: middle;
+        background-color: grey;
+    }
+    
+    .playlist {
+        height: 35vh;
+        width: 100%;
+    }
+    
+    .download-app {
+        color: grey;
+        font-size: 0.8em;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+    }
+    
+    .main-nav-top ul li:hover a{
+        color: white;
+    }
+    
+    .main-nav-top ul li:hover svg {
+        filter: invert(1) brightness(100);
+    } 
+    
+    .download-app:hover .install {
+        color: white;
+        cursor: pointer;
+    }
 
-header {
+    /* /nav */
+
+    /* main */
+    main {
+        width: 100%;
+        height: calc(100% - 90px);
+        background-color: blueviolet;
+        overflow: hidden;
+    }
+
+    .main-content {
+        float: left;
+        width: calc(100% - 230px);
+        height: 100%;
+        padding-top: calc(90px + 2em);
+        padding-bottom: 2em;
+        background-color: darkcyan;
+        overflow: auto;
+  }
+  .header-main {
     position: fixed;
     top: 0;
-    left: 0;
-    height: 5em;
-    width: 100%;
-    background-color: black;
-    opacity: 0.8;
-    z-index: 1;
+    right: 0;
+    width: calc( 100% - 230px);
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-header .upgrade {
-    width: 12em;
+  }
+  
+  .header-main .upgrade {
+    width: 14em;
     text-align: center;
-}
-
-header .upgrade button {
+  }
+  
+  .header-main .upgrade button {
     background-color: black;
     border: 2px solid white;
     color: white;
@@ -40,160 +133,68 @@ header .upgrade button {
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.6em;
-}
+  }
+  
+  .header-main .upgrade button:hover {
+      padding: 12px 22px;
+    }
+    
+    .logo-spotify {
+        width: 80%;
+    }
 
-header .upgrade button:hover {
-    padding: 12px 22px;
-}
+    ul li {
+        list-style: none;
+    }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    ul {
+        line-height: 30px;
+    }
+  /* margin */
 
-.overflow {
-    overflow: auto;
-}
-/* nav */
+  .mar-bot-20 {
+      margin-bottom: 20px;
+  }
 
+  .mar-top-10 {
+      margin-top: 10px;
+  }
 
-nav {
-   color: white;
-   position: fixed;
-   top: 0;
-   left: 0;
-   float: left;
-   z-index: 2;
-   background-color: black;
-   width: 200px;
-   height: calc(100vh - 48px);
-   padding: 15px;
-}
+/* font-size */
 
-.nav-user-bot {
-    color: rgb(112, 89, 89);
-    align-self: flex-end;
-}
+  .font-s-40 {
+      font-size: 40px;
+      vertical-align: middle;
+  }
 
-.nav-cont-flex {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    flex-wrap: wrap;
-}
+  /* overflow */
 
-.logo-spotify {
-    width: 80%;
-}
+  .overflow {
+      overflow: auto;
+  }
 
-nav ul li a svg {
-    width: 15%;
-    vertical-align: text-bottom;
-}
+  /* colori */
 
-nav a {
-    color: #AEB6BF ;
-    text-decoration: none;
-}
+  .c-white {
+      color: white;
+  }
 
-.user-nav {
-    margin-right: 10px;
-    width: 15%;
-    border-radius: 50%;
-    vertical-align: middle;
-    background-color: grey;
-}
-
-.download-app {
-    color: grey;
-    font-size: 0.8em;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-}
-
-.playlist {
-    height: 35vh;
+  footer {
     width: 100%;
-}
-
-/* hover */
-
-nav ul li:hover a{
-    color: white;
-}
-
-nav ul li:hover svg {
-    filter: invert(1) brightness(100);
-} 
-
- .download-app:hover .install {
-    color: white;
-    cursor: pointer;
-}
-
-
-ul li {
-    list-style: none;
-}
-
-ul {
-    line-height: 35px;
-}
-
-/* main */
-
-.cont-main {
-    float: right;
-    width: calc(100% - 200px);
-    margin-top: 5em;
-    background-color: blue;
-}
-
-/* position */
-
-.position-r {
-    position: relative;
-}
-
-/* margin */
-
-.mar-top-10 {
-    margin-top: 10px;
-}
-
-.mar-bot-20 {
-    margin-bottom: 20px;
-}
-
-/* height */
-
-.h-100 {
-    height: 100%;
-}
-
-
-/* font-size  */
-
-.font-s-40 {
-    font-size: 40px;
-    vertical-align: middle;
-}
-
-/* colori */
-.c-white {
-    color: white;
-}
-
-
-/* footer */
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    height: 3em;
+    height: 90px;
     background-color: grey;
-    width: 100%;
-}
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .main-nav {
+      width: 50px;
+    }
+    .main-content {
+      width: calc(100% - 50px);
+    }
+    .main-call-to-action {
+    width: calc( 100% - 50px);
+    }
+  }
+  
