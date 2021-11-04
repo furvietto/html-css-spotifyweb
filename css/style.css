@@ -33,7 +33,7 @@
       height: 100%;
       min-height: 520px;
       background-color: black;
-      padding: 15px;
+      padding: 15px 15px 0 15px;
       font-size: 0.8em;
     }
     .main-nav-top {
@@ -70,25 +70,36 @@
     }
     
     .download-app {
-        color: grey;
+      color: grey;
         font-size: 0.8em;
         padding-bottom: 10px;
         border-bottom: 1px solid white;
-    }
-    
-    .main-nav-top ul li:hover a{
+      }
+      
+      .main-nav-top ul li:hover a{
         color: white;
-    }
-    
-    .main-nav-top ul li:hover svg {
+      }
+      
+      .main-nav-top ul li:hover svg {
         filter: invert(1) brightness(100);
-    } 
-    
-    .download-app:hover .install {
+      } 
+      
+      .download-app:hover .install {
         color: white;
         cursor: pointer;
-    }
-
+      }
+      
+      .logo-spotify {
+          width: 80%;
+      }
+    
+      ul li {
+          list-style: none;
+      }
+    
+      ul {
+          line-height: 30px;
+      }
     /* /nav */
 
     /* main */
@@ -108,6 +119,8 @@
         background-color: darkcyan;
         overflow: auto;
   }
+
+  /* header main */
   .header-main {
     position: fixed;
     top: 0;
@@ -139,17 +152,6 @@
       padding: 12px 22px;
     }
     
-    .logo-spotify {
-        width: 80%;
-    }
-
-    ul li {
-        list-style: none;
-    }
-
-    ul {
-        line-height: 30px;
-    }
   /* margin */
 
   .mar-bot-20 {
@@ -160,11 +162,41 @@
       margin-top: 10px;
   }
 
-/* font-size */
+  .mar-right-30 {
+    margin-right: 30px;
+  }
+
+  .mar-right-20 {
+    margin-right: 20px;
+  }
+
+/* font-size e weight */
 
   .font-s-40 {
       font-size: 40px;
-      vertical-align: middle;
+  }
+
+  .font-s-08 {
+    font-size: 0.8em;
+  }
+
+  .font-s-07 {
+    font-size: 0.7em;
+  }
+
+  .font-w-2 {
+    font-weight: 700;
+  }
+
+  #play-font {
+    font-size: 2.3em;
+    vertical-align: sub;
+  }
+
+  /* text-aling */
+
+  .t-align{
+    text-align: center;
   }
 
   /* overflow */
@@ -179,12 +211,137 @@
       color: white;
   }
 
+  .c-grey {
+    color: grey;
+  }
+
+  /* width */
+
+
+  .v-align {
+    vertical-align: middle;
+  }
+
+  .width-50-px {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .width-20 {
+    width: 20%;
+  }
+
+  .width-45 {
+    width: 45%;
+  }
+
+  
+  
+  /* height */
+  .h100 {
+    height: 100%;
+  }
+  
+  #align-self-c {
+    align-self: center;
+  }
+
+  /* padding */
+
+  .pad-bot-10 {
+    padding-bottom: 10px;
+  }
+  
+  /* footer */
+  
   footer {
     width: 100%;
     height: 90px;
-    background-color: grey;
+    background-color: #373b38;
+    display: flex;
+    justify-content: space-between;
   }
   
+  .col-s {
+    display: flex;
+    align-self: center;
+    padding-left: 10px;
+  }
+  
+  .col-m {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .col-m .t-align i {
+    font-size: 1.2em;
+    margin-right: 5%;  
+  }
+  
+  .col-r {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+  }
+  
+  .minute-song {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .minute-song span {
+    display: inline-block;
+  }
+
+  .in-min-bar {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    background-color: lightgray;
+  }
+
+  .prova {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    padding: 10px;
+    background-color: honeydew;
+    border-radius: 50%;
+    display: none;
+  }
+
+  .in-min-bar:hover .prova {
+    display: block;
+  }
+
+  .minute-bar {
+    height: 7px;
+    align-self: center;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+    background-color: grey;
+  }
+
+  .minute-bar:hover .in-min-bar {
+    background-color: green;
+    cursor: pointer;
+  }
+  
+  .song-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+  }
+  
+  footer i:hover {
+    color: white;
+    cursor: pointer;
+  }
   
   @media screen and (max-width: 600px) {
     .main-nav {
@@ -195,6 +352,10 @@
     }
     .main-call-to-action {
     width: calc( 100% - 50px);
+    }
+    .width-50-px {
+      width: 30%;
+      height: 30%;
     }
   }
   
