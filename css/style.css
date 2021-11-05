@@ -26,109 +26,137 @@
   }
 
   /* nav */
+
+  .small-nav-hide {
+    display: none;
+  }
+
+  .cont-small-nav-hide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .small-nav-hide ul li {
+    margin-bottom: 10px;
+  }
+  
+  .small-nav-hide ul li:hover .invert {
+    filter: invert(1) brightness(100);
+  }
+  
+  .user-nav-hide {
+    width: 50%;
+    border-radius: 50%;
+    background-color: gray;
+  }
   
   .main-nav {
+    float: left;
+    width: 230px;
+    height: 100%;
+    min-height: 570px;
+    background-color: black;
+    padding: 15px 15px 0 15px;
+    font-size: 0.8em;
+  }
+  .main-nav-top {
+    width: 100%;
+    height: calc(100% - 80px);
+  }
+  .main-nav-bottom {
+    width: 100%;
+    height: 80px;
+    color: rgb(112, 89, 89)
+  }
+    
+  .main-nav-top ul li a svg{
+    width: 12%;
+    vertical-align: top;
+  }
+  
+  .main-nav-top a {
+    color: #AEB6BF ;
+    text-decoration: none;
+  }
+  
+  .user-nav {
+    margin-right: 10px;
+    width: 12%;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: grey;
+  }
+  
+  .playlist {
+    height: 35vh;
+    width: 100%;
+  }
+  
+  .download-app {
+    color: grey;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  
+  .main-nav-top ul li:hover a{
+    color: white;
+  }
+  
+  .main-nav-top ul li:hover svg {
+    filter: invert(1) brightness(100);
+  } 
+  
+  .download-app:hover .install {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .logo-spotify {
+      width: 80%;
+  }
+
+  ul li {
+      list-style: none;
+  }
+
+  .main-nav-top ul {
+      line-height: 30px;
+  }
+  /* /nav */
+
+  /* main */
+  main {
+      width: 100%;
+      height: calc(100% - 90px);
+      background-color: blueviolet;
+      overflow: hidden;
+  }
+
+  .main-content {
       float: left;
-      width: 230px;
+      width: calc(100% - 230px);
       height: 100%;
-      min-height: 570px;
-      background-color: black;
-      padding: 15px 15px 0 15px;
-      font-size: 0.8em;
-    }
-    .main-nav-top {
-        width: 100%;
-        height: calc(100% - 80px);
-    }
-    .main-nav-bottom {
-        width: 100%;
-        height: 80px;
-        color: rgb(112, 89, 89)
-    }
-    
-    .main-nav-top ul li a svg{
-        width: 12%;
-        vertical-align: top;
-    }
-    
-    .main-nav-top a {
-        color: #AEB6BF ;
-        text-decoration: none;
-    }
-    
-    .user-nav {
-        margin-right: 10px;
-        width: 12%;
-        border-radius: 50%;
-        vertical-align: middle;
-        background-color: grey;
-    }
-    
-    .playlist {
-        height: 35vh;
-        width: 100%;
-    }
-    
-    .download-app {
-      color: grey;
-        font-size: 0.8em;
-        padding-bottom: 10px;
-        border-bottom: 1px solid white;
-      }
-      
-      .main-nav-top ul li:hover a{
-        color: white;
-      }
-      
-      .main-nav-top ul li:hover svg {
-        filter: invert(1) brightness(100);
-      } 
-      
-      .download-app:hover .install {
-        color: white;
-        cursor: pointer;
-      }
-      
-      .logo-spotify {
-          width: 80%;
-      }
-    
-      ul li {
-          list-style: none;
-      }
-    
-     .main-nav-top ul {
-          line-height: 30px;
-      }
-    /* /nav */
-
-    /* main */
-    main {
-        width: 100%;
-        height: calc(100% - 90px);
-        background-color: blueviolet;
-        overflow: hidden;
-    }
-
-    .main-content {
-        float: left;
-        width: calc(100% - 230px);
-        height: 100%;
-        padding-top: calc(90px + 2em);
-        padding-bottom: 2em;
-        background-color: darkcyan;
-        overflow: auto;
+      padding-top: calc(90px + 2em);
+      padding-bottom: 2em;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: darkcyan;
+      overflow: auto;
   }
 
   .library {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 30px;
   }
 
   .library li {
     margin-right: 10px;
+    line-height: 30px;
   }
 
   a {
@@ -137,8 +165,39 @@
 
   .library li a {
     display: block;
-    height: 100%;
+    height: 30px;
     color: #373b38 ;
+  }
+
+  .library li:hover  a:after {
+    content: "";
+    display: block;
+    background-color: chartreuse;
+    height: 2px;
+    width: 40px;
+    margin: auto;
+  }
+
+  .top-col-main {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .top-col-main > li {
+    width: calc(100% / 7);
+  }
+
+  .top-col-main img {
+    width: 100%;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  h4 {
+    margin: 10px 0;
   }
 
   /* header main */
@@ -236,12 +295,16 @@
     color: grey;
   }
 
-  /* width */
+  .c-greywhite {
+    color: #AEB6BF;
+  }
 
+  /* vertical align */
 
   .v-align {
     vertical-align: middle;
   }
+  /* width */
 
   .width-50-px {
     width: 50px;
@@ -257,6 +320,10 @@
 
   .width-45 {
     width: 45%;
+  }
+
+  .width-60 {
+    width: 60%;
   }
 
   .width-80 {
@@ -342,7 +409,7 @@
     display: none;
   }
 
-  .in-min-bar:hover .mix-up {
+  .minute-bar:hover .mix-up {
     display: block;
   }
 
@@ -370,11 +437,37 @@
     color: white;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 700px) and (min-width : 601px) {
+      .top-col-main {
+        flex-wrap: wrap;
+        justify-content: start;
+      }
+
+      .top-col-main li {
+        width: calc(25% - 10px);
+        margin-right: 10px;
+      }
+    }
+  
   
   @media screen and (max-width: 600px) {
+    .small-nav-hide{
+      display: block;
+      height: 100%;
+    }
+
     .main-nav {
       width: 50px;
+      padding: 0;
+      min-height: 0;
     }
+
+    .main-nav-top,
+    .main-nav-bottom {
+      display: none;
+    }
+
     .main-content {
       width: calc(100% - 50px);
     }
