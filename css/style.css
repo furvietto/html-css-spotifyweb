@@ -148,6 +148,10 @@
       overflow: auto;
   }
 
+  .top-col-main ul li:hover .opacity {
+    opacity: 0.5;
+  }
+
   .library {
     display: flex;
     justify-content: center;
@@ -438,7 +442,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 700px) and (min-width : 601px) {
+  @media screen and (max-width: 1100px) and (min-width : 701px) {
       .top-col-main {
         flex-wrap: wrap;
         justify-content: start;
